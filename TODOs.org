@@ -1,4 +1,6 @@
 * org file to test
+  basically org buffer will make the call next error to 'next-error instead of
+  'flycheck-next-error
 * how to setup
 ** your python layer 
      (python :variables python-backend 'lsp)
