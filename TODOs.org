@@ -1,0 +1,20 @@
+* org file to test
+* how to setup
+** your python layer 
+     (python :variables python-backend 'lsp)
+     syntax-checking
+     
+** make sure example.py will have error like this: 
+
+example.py     6   5 warning  E113   pycodestyle: E113 unexpected indentation (lsp-ui)
+example.py     6   5 warning  E303   pycodestyle: E303 too many blank lines (2) (lsp-ui)
+example.py     6   5 error           pyflakes: unexpected indent (lsp-ui)
+     
+     
+  
+* screenshots 
+[[file:bug.webm][this is the bug, notice the echo buffer for commands used]]
+you'll see 'no more match' complaint when you have org window 
+opened side by side
+
+[[file:bugfix.webm][this is the fix]]
